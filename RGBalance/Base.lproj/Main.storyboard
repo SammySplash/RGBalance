@@ -130,9 +130,12 @@
                     </view>
                     <connections>
                         <outlet property="blueSlider" destination="ndm-lF-tFZ" id="RD6-Ta-BDQ"/>
+                        <outlet property="blueSliderValue" destination="Iya-Tg-x4P" id="e7f-DS-KD7"/>
                         <outlet property="colorChangingView" destination="p0d-ok-dXa" id="fjb-hg-2eg"/>
                         <outlet property="greenSlider" destination="3nY-cq-XtN" id="RkC-UB-fP5"/>
+                        <outlet property="greenSliderValue" destination="PXW-7q-sjC" id="gj2-rs-JPe"/>
                         <outlet property="redSlider" destination="bur-uF-gXa" id="k8i-cg-hom"/>
+                        <outlet property="redSliderValue" destination="Yxd-nd-EZy" id="VGj-xb-WpX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
