@@ -44,9 +44,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bur-uF-gXa">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bur-uF-gXa">
                                                 <rect key="frame" x="140" y="0.0" width="223" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
+                                                <connections>
+                                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="touchDragInside" id="XdK-K4-ewi"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -71,9 +74,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3nY-cq-XtN">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3nY-cq-XtN">
                                                 <rect key="frame" x="140" y="0.0" width="223" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                                <connections>
+                                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="touchDragInside" id="gWF-5S-4t0"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -98,9 +104,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ndm-lF-tFZ">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ndm-lF-tFZ">
                                                 <rect key="frame" x="140" y="0.0" width="223" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
+                                                <connections>
+                                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="touchDragInside" id="J8d-IV-Bht"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -108,7 +117,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <color key="backgroundColor" red="0.15294116739999999" green="0.33333334329999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="80w-JI-ff8" firstAttribute="top" secondItem="p0d-ok-dXa" secondAttribute="bottom" constant="40" id="6aB-dq-fq8"/>
                             <constraint firstItem="p0d-ok-dXa" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="Fq7-rL-Nhv"/>
@@ -119,6 +128,12 @@
                             <constraint firstItem="p0d-ok-dXa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rTE-cw-SFn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueSlider" destination="ndm-lF-tFZ" id="RD6-Ta-BDQ"/>
+                        <outlet property="colorChangingView" destination="p0d-ok-dXa" id="fjb-hg-2eg"/>
+                        <outlet property="greenSlider" destination="3nY-cq-XtN" id="RkC-UB-fP5"/>
+                        <outlet property="redSlider" destination="bur-uF-gXa" id="k8i-cg-hom"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,9 +141,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
